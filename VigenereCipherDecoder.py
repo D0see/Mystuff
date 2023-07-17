@@ -12,7 +12,7 @@ def vigenere_cipher_decoder(keyword, message):
   for words in messageinlist:
     message_decoded.append(" ")
     for symbols in words:
-      if symbols != "!" and symbols != "?" and symbols != "." and symbols != ",":
+      if symbols != "!" and symbols != "?" and symbols != "." and symbols != "," and symbols != "'":
         decoded_symbol = alphabet[alphabet.index(symbols)+ keyword_value_list[counter]]
         message_decoded.append(decoded_symbol)
         counter +=1
