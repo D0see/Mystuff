@@ -1,5 +1,3 @@
-#known bugs : 
-#mrwhite can start the round :(
 
 import random
 import csv
