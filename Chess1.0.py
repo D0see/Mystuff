@@ -1,9 +1,6 @@
 import itertools
 import copy
 def the_game():
-  #next step : Build concede logic (in progress) (for this you need to build a function emcompassing the whole game) (DONT FORGET TO UNGLOBAL PLAYGROUND IN FUNCTION SEQUENCE AFTERWARDS)
-  # build pat logic 
-  # build checkmate logic            
   
   #Ask what length the user wants the board to be
   def define_row_length():
