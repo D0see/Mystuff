@@ -1,8 +1,7 @@
-import os, sys
+import os
 from collections import deque
 
 os.chdir(os.path.dirname(__file__))
-print(os.getcwd())
 
 print('Before starting place all the files you want to check in the script directory')
 print('The most common words will be at least 4 characters long')
@@ -96,10 +95,6 @@ for file_name in files_to_check :
 
         third_most_common_word, third_most_common_word_occurence = get_most_common_word(list_of_unique_words, list_text_without_special_chars)
      
-        
-
-
-
 
         print('\n')
         print(f'{file_name} :')
