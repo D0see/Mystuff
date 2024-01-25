@@ -1,0 +1,372 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: white;
+    Width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+header {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    place-items: center;
+}
+
+.nakedlink {
+    text-decoration: none;
+    color: white;
+}
+#Logomar {
+    width: 30%;
+    min-width: 250px;
+    height: auto;
+    margin: 3% auto 0%;
+}
+
+figcaption {
+    position: relative;
+    font-size: 12px;
+    bottom: 11px;
+    text-align: center;
+    margin: 0% auto 2%;
+    
+}
+section {
+    overflow: overlay;
+    margin-bottom: 30px;
+    align-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+h2 {
+    position: relative;
+    margin: 0;
+    top: 30px;
+    text-shadow: 2px 2px 2px grey;
+    
+}
+h4 {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+    max-width: 700px;
+    min-width: 25%;
+    margin: 3% auto;
+    border-radius: 10px;
+    text-shadow: -1px 0px 1px grey;
+
+}
+
+h5 {
+    margin-bottom: 10%;
+}
+
+nav {
+    text-align: center;
+    display: grid;
+    margin: 0 auto;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    min-width: 700px;
+    max-width: 50%;
+    top: -60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 20px;
+    padding-bottom : 10px;
+    padding-left : 5px;
+    transition: 0.5s ease;
+    border: 2px solid white;
+}
+#navbar {
+    display: grid;
+    place-items: center;
+}
+
+#navbartrigger {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    min-width: 700px;
+    max-width: 50%;
+    height: 7%;
+
+}
+
+#navbartrigger:hover nav {
+    transform: translate(0px,40px);
+}
+
+nav > ul, #TableOfContent {
+    position: relative;
+    left: -2px;
+    list-style-type: none;
+    align-content: center;
+    padding: 0;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+nav > ul > li, #TableOfContent > li {
+    position: relative;
+    bottom: 2px;
+    border-radius: 5px;
+    margin-right: 2%;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#TableOfContent > li:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+#historyimg {
+    display: block;
+    position: relative;
+    width: 60%;
+    min-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#Join {
+    margin: 0 auto;
+    width: 100%;
+    overflow: visible;
+}
+
+#socials {
+    width: 50%;
+    margin: 0 auto;
+}
+#Join ul {
+    margin-top: 0;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+#Join li {
+    display: inline-block;
+    height: 25%;
+    min-width: 100px;
+    width: 25%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}
+
+#Join img {
+    transition: transform 0.3s ease;
+    width: 90%;
+    min-width: 70px;
+    margin: 10% 0;
+}
+
+#Join img:hover  {
+        transform: scale(1.25);
+}
+
+#LogoDiscord{
+    transition: transform 0.5s ease;
+}
+
+#Join #LogoDiscord:hover {
+    transform: rotate(360.0deg)
+}
+
+#Join p {
+    margin-bottom: 5%
+}
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.powerranking {
+    display: block;
+    width: 40%;
+    margin: 0 auto 20px;
+    min-width: 600px;
+}
+
+#braacketlink {
+    text-transform: capitalize;
+    background-color: black;
+    transition: transform ease 1.3s;
+}
+
+#braacketlink:hover {
+    transform: scale(2);
+}
+/* tPowerRanking not in use
+#tPowerRanking {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+#tPowerRanking th, #tPowerRanking td {
+    border: 1px solid lightgrey;
+    padding: 15px;
+    text-align: center;
+}
+
+#tPowerRanking th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#tPowerRanking td {
+    background-color: #fff;
+}
+
+#tPowerRanking tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tPowerRanking tbody tr:hover {
+    background-color: #e5e5e5;
+}
+*/
+
+#Partners ul {
+    position: relative;
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer {
+    position: fixed;
+    bottom: -2px;
+    height: 6%;
+    min-width: 700px;
+    max-width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: black;
+    border-radius: 0px;
+    margin: 0px auto;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+#visiblefooter {
+    font-size: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+#hiddenfooter {
+    position: absolute;
+    color: black;
+    text-align: center;
+    z-index: 1;
+    text-decoration: none;
+}
+
+footer:hover #visiblefooter {
+    color: rgb(0, 0, 0);
+}
+
+footer:hover #hiddenfooter {
+    color: white;
+    z-index: 3;
+}
+
+#hiddenfooter:hover {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(88, 88, 88);
+}
+
+h4 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+p {
+    width: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    font-weight: normal;
+    min-width: 250px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+p.justified {
+    text-align: justify;
+}
