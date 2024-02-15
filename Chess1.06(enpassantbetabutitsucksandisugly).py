@@ -776,16 +776,25 @@ def the_game():
           while True == True :
               if king_safety_check(playground, turn, anti_turn) == False :
                 if check_for_legal_moves(playground, turn, anti_turn) == True :
+                  def ask_to_play_again():
+                    answer = ""
+                    while answer != "Y" and answer != "N":
+                      answer = input("\nDo you want to play again ? Y/N\n")
+                    if answer == "Y":
+                      print("\n")
+                      the_game()
+                    elif answer == "N":
+                      print("\n Hope you had fun ! Goodbye !")
                   if turn == "W":
-                    print("\n" + f"Black won ! on turn {turn_count}\n")
-                    the_game()
+                    print("\n" + f"Black won on turn {turn_count} !\n")
+                    ask_to_play_again()
                   if turn == "B":
-                    print("\n" + f"White won ! on turn {turn_count}\n")
-                    the_game()
+                    print("\n" + f"White won on turn {turn_count} !\n")
+                    ask_to_play_again()
               if king_safety_check(playground, turn, anti_turn) == True :
                 if check_for_legal_moves(playground, turn, anti_turn) == True :
                     print("\n" + "it's a draw " + "\n")
-                    the_game()
+                    ask_to_play_again()
               print("\n" + f"{turn} to move")
               if king_safety_check(playground, turn, anti_turn) == False :
                   print("\n" + "Your king is in check") 
