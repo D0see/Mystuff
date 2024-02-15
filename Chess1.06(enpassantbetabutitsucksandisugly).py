@@ -1,3 +1,5 @@
+#todo : Build castling logic (hard)
+
 
 import itertools
 import copy
@@ -5,11 +7,12 @@ import copy
 def the_game():
 
   #Ask what length the user wants the board to be
-  def define_row_length():
+  """def define_row_length():
     row_length = 0
     while row_length <= 3 or row_length > 8 or row_length == 5 :
       row_length = int(input("how many cases per row ? (4,6,7 or 8)" + "\n"))
-    return row_length
+    return row_length"""
+  
 
   #prints the board 
   def print_grid(grid, row_length):
@@ -110,7 +113,8 @@ def the_game():
     print_grid(grid, row_length)
     return grid #create a squared grid (a dictionnary) of length row_length then populate the grid with pieces.
 
-  row_length = define_row_length()
+  #row_length = define_row_length()
+  row_length = 8
   playground = make_and_populate_a_grid(row_length)
 
 
@@ -773,10 +777,10 @@ def the_game():
               if king_safety_check(playground, turn, anti_turn) == False :
                 if check_for_legal_moves(playground, turn, anti_turn) == True :
                   if turn == "W":
-                    print("\n" + "Black won !" + "\n")
+                    print("\n" + f"Black won ! on turn {turn_count}\n")
                     the_game()
                   if turn == "B":
-                    print("\n" + "White won !" + "\n")
+                    print("\n" + f"White won ! on turn {turn_count}\n")
                     the_game()
               if king_safety_check(playground, turn, anti_turn) == True :
                 if check_for_legal_moves(playground, turn, anti_turn) == True :
